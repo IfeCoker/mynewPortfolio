@@ -76,7 +76,6 @@ ul{
 }
 
 .container{
-    max-width: 1050px;
     width: 100%;
     margin: 5% 0;
 }
@@ -536,7 +535,7 @@ h3.profession{
     height: 50px;
     padding: 0 50px;        
 }/* 380 600 900 1100  */
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1100px) {
     .section{
         background-color: aqua; 
     }
