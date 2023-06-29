@@ -535,7 +535,7 @@ h3.profession{
     height: 50px;
     padding: 0 50px;        
 }/* 380 600 900 1100  */
-@media (max-width:1225px) {
+@media (max-width:1240px) {
     .section{
         background-color: aqua; 
     }
@@ -552,5 +552,49 @@ h3.profession{
     .about .about-content .personal-info .info-item p span{
         display: block;
         margin-left: 0;
+    }
+}
+@media (max-width:970px) {
+    .section{
+        background-color: plum; 
+    }
+    .home .home-img img{
+        height: 250px;
+    }
+    .home .home-img::after{
+        right: 10px;
+        bottom: 40px;
+    }
+    .home .home-img::before{
+        left: 10px;    
+    }
+}
+@media (max-width:780px){
+    .section{
+        background-color: burlywood; 
+    }
+    .home .home-img{
+        display: none;
+    }
+    .home .home-info {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .contact .contact-info-item,
+    .portfolio .portfolio-item,
+    .service .service-item{
+        flex: 0 0 50%;
+        max-width: 50%;   
+    }
+}
+@media (max-width:700px){
+    .section{
+        background-color: rgb(171, 171, 227)
+        ; 
+    }
+    .about .about-content .skills,
+    .about .about-content .personal-info{
+        flex: 0 0 100%;
+        max-width: 100%;
     }
 }
