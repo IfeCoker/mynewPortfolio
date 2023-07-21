@@ -612,4 +612,7 @@ h3.profession{
         flex: 0 0 100%;
         max-width: 100%;
     }
+    .style-switcher{
+        padding-left: 15px;
+    }
 }
