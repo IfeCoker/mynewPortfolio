@@ -5,6 +5,13 @@
     --text-black-900:#302e4d;
     --text-black-700:#504e70;
 }
+body.dark{
+    --bg-black-900:#151515;
+    --bg-black-100:#222222;
+    --bg-black-50:#393939;
+    --text-black-900:#ffffff;
+    --text-black-700:#e9e9e9;
+}
 body{
     font-size: 16px;
     line-height: 1.5; 
@@ -106,7 +113,7 @@ h3.hello span{
     font-family: 'Clicker Script', cursive;
     font-size: 30;
     font-weight: 500;
-    color: orangered;
+    color: var(--skin-color);
 }
 h3.profession{
     font-size: 30px;
@@ -114,7 +121,7 @@ h3.profession{
     color: var(--text-black-900);
 }
 .typing{
-    color: orangered;
+    color: var(--skin-color);
 }
 .home-info p {
     margin-bottom: 70px;
@@ -130,7 +137,7 @@ h3.profession{
     display: inline-block;
     white-space: nowrap;
     border: none;
-    background: orangered;
+    background: var(--skin-color);
     transition: all 0.3s ease;
 }
 .btn:hover{
@@ -156,8 +163,8 @@ h3.profession{
     width: 80px;
     right: 20px;
     bottom: -40px;
-    border-bottom: 10px solid orangered;
-    border-right: 10px solid orangered;
+    border-bottom: 10px solid var(--skin-color);
+    border-right: 10px solid var(--skin-color);
 }
 .home .home-img::before {
     content: '';
@@ -166,8 +173,8 @@ h3.profession{
     width: 80px;
     left: -20px;
     top: -40px;
-    border-top: 10px solid orangered;
-    border-left: 10px solid orangered;
+    border-top: 10px solid var(--skin-color);
+    border-left: 10px solid var(--skin-color);
 }
 /* About */
 .section .container{
@@ -191,7 +198,7 @@ h3.profession{
     content: '';
     height: 4px;
     width: 50px;
-    background-color: orangered;
+    background-color: var(--skin-color);
     position: absolute;
     top: 100%;
     left: 0;
@@ -200,7 +207,7 @@ h3.profession{
     content: '';
     height: 4px;
     width: 25px;
-    background-color: orangered;
+    background-color: var(--skin-color);
     position: absolute;
     top: 100%;
     left: 0;
@@ -228,7 +235,7 @@ h3.profession{
     color: var(--text-black-900);
 }
 .about .about-content .about-text h3 span {
-    color: orangered;
+    color: var(--skin-color);
 }
 .about .about-content .about-text p{
     font-size: 16px;
@@ -298,7 +305,7 @@ h3.profession{
     top: 0;
     height: 100%;
     border-radius: 4px;
-    background-color: orangered;
+    background-color: var(--skin-color);
 }
 .about .about-content .skills .skill-item .progress .skill-percent{
     position: absolute;
@@ -344,7 +351,7 @@ h3.profession{
     content: '';
     width: 1px;
     height: 100%;
-    background-color: orangered;
+    background-color: var(--skin-color);
     position: absolute;
     left: 7px;
     top: 0;
@@ -355,7 +362,7 @@ h3.profession{
     top: 0;
     height: 15px;
     width: 15px;
-    background-color: orangered;
+    background-color: var(--skin-color);
     border-radius: 50%;
 }
 .about .about-content .timeline .timeline-date{
@@ -379,15 +386,15 @@ h3.profession{
     text-align: justify;
     color: var(--text-black-700);
 }
-.service .container{
+.services .container{
     padding-bottom: 40px;
 }
-.service .service-item {
+.services .services-item {
     margin-bottom: 30px;
     flex: 0 0 33.33%;
     max-width: 33.33%;
 }
-.service .service-item .service-item-inner{
+.services .services-item .services-item-inner{
     background-color: var(--bg-black-100);
     border: 1px solid var(--bg-black-50);
     border-radius: 10px;
@@ -395,10 +402,10 @@ h3.profession{
     text-align: center;
     transition: all 0.3s ease;
 }
-.service .service-item .service-item-inner:hover {
+.services .services-item .services-item-inner:hover {
     box-shadow: 0 0 20px rgba(48, 46, 77, 0.2);
 }
-.service .service-item .service-item-inner .icon{
+.services .services-item .services-item-inner .icon{
     height: 60px;
     width: 60px;
     border-radius: 50%;
@@ -407,16 +414,16 @@ h3.profession{
     text-align: center;
     transition: all 0.3s ease;
 }
-.service .service-item .service-item-inner .icon .fa{
+.services .services-item .services-item-inner .icon .fa{
     font-size: 40px;
     line-height: 60px;
-    color: orangered;
+    color: var(--skin-color);
     transition: all 0.3s ease;
 }
-.service .service-item .service-item-inner:hover .icon{
-    background: orangered;
+.services .services-item .services-item-inner:hover .icon{
+    background: var(--skin-color);
 }
-.service .service-item .service-item-inner:hover .icon .fa{
+.services .services-item .services-item-inner:hover .icon .fa{
     font-size: 25px;
     color: #fff;
 }
@@ -427,7 +434,7 @@ h3.profession{
     font-weight: 700;
     text-transform: capitalize;
 }
-.service .service-item .service-item-inner p{
+.services .services-item .services-item-inner p{
     font-size: 16px;
     color: var(--text-black-700);
     line-height: 25px;
@@ -454,14 +461,14 @@ h3.profession{
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
-    background-color: orangered;
+    background-color: var(--skin-color);
 }
 .portfolio .portfolio-item-inner .portfolio-img img{
     width: 100%;
     display: block;
 }
 .contact-title{
-    color: orangered;
+    color: var(--skin-color);
     text-align: center;
     font-size: 25px;
     margin-bottom: 20px;
@@ -483,7 +490,7 @@ h3.profession{
 }
 .contact .contact-info-item .icon .fa{
     font-size: 25px;
-    color: orangered;
+    color: var(--skin-color);
 }
 .contact .contact-info-item h4{
     font-size: 18px;
@@ -536,9 +543,9 @@ h3.profession{
     padding: 0 50px;        
 }/* 380 600 900 1100  */
 @media (max-width:1240px) {
-    .section{
+    /* .section{
         background-color: aqua; 
-    }
+    } */
     .aside{
         left: -270px;
     }
@@ -555,9 +562,9 @@ h3.profession{
     }
 }
 @media (max-width:970px) {
-    .section{
+    /* .section{
         background-color: plum; 
-    }
+    } */
     .home .home-img img{
         height: 250px;
     }
@@ -570,12 +577,13 @@ h3.profession{
     }
 }
 @media (max-width:780px){
-    .section{
+    /* .section{
         background-color: burlywood; 
-    }
+    } */
     .home .home-img{
         display: none;
     }
+    .about .about-content .skills,
     .about .about-content .education,
     .about .about-content .experience,
     .home .home-info {
@@ -584,18 +592,23 @@ h3.profession{
     }
     .contact .contact-info-item,
     .portfolio .portfolio-item,
-    .service .service-item{
+    .services .services-item{
         flex: 0 0 50%;
         max-width: 50%;   
     }
 }
-@media (max-width:700px){
-    .section{
-        background-color: rgb(171, 171, 227)
-        ; 
-    }
-    .about .about-content .skills,
+@media (max-width:600px){
+    /* .section{
+        background-color: rgb(171, 171, 227); 
+    } */
     .about .about-content .personal-info{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .contact .contact-form .col-6,
+    .contact .contact-info-item,
+    .portfolio .portfolio-item,
+    .services .services-item{
         flex: 0 0 100%;
         max-width: 100%;
     }
