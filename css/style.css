@@ -18,17 +18,21 @@ body{
     /* max-width: 100%; */
     /* position: relative; */
     /* overflow-x: hidden;   */
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     /* overflow-y: scroll; */
 }
 *{
     margin: 0;
     padding: 0;
+    outline: none;
     box-sizing: border-box;
     text-decoration: none;    
 }
 ul{
     list-style: none;   
+}
+.main-container{
+    width: fit-content;
 }
 .aside{
     width: 270px;
@@ -42,9 +46,6 @@ ul{
     padding: 30px;
     border-right: 1px solid var(--bg-black-50);
 }
-/* .main-content{
-    padding-left: 270px;
-} */
 .section{
     background-color: var(--bg-black-900);
     display: block;
@@ -56,9 +57,13 @@ ul{
     z-index: 0;
     padding: 0 30px;
     opacity: 1;
+    width: 100%;
 }
 .main-content{
     padding-left: 270px;
+    /* background-color: var(--bg-black-900); */
+    /* width: fit-content; */
+    /* max-width: 100%; */
 }
 .aside .nav {
     margin-top: 70px;
@@ -84,7 +89,7 @@ ul{
 
 .container{
     width: 100%;
-    margin: 5% 0;
+    margin: auto 0;
 }
 .row{
     display: flex;
@@ -590,6 +595,9 @@ h3.profession{
         flex: 0 0 100%;
         max-width: 100%;
     }
+    .about .about-content .experience{
+        margin-top: 40px;
+    }
     .contact .contact-info-item,
     .portfolio .portfolio-item,
     .services .services-item{
@@ -601,10 +609,10 @@ h3.profession{
     /* .section{
         background-color: rgb(171, 171, 227); 
     } */
-    .about .about-content .personal-info{
+    /* .about .about-content .personal-info{
         flex: 0 0 100%;
         max-width: 100%;
-    }
+    } */
     .contact .contact-form .col-6,
     .contact .contact-info-item,
     .portfolio .portfolio-item,
@@ -612,7 +620,20 @@ h3.profession{
         flex: 0 0 100%;
         max-width: 100%;
     }
-    .style-switcher{
+    /* .style-switcher{
         padding-left: 15px;
-    }
+    } */
 }
+/* @media (max-width:480px){
+    .section{
+        background-color: burlywood; 
+        padding-right: 0px;
+    }  
+    .main-container{
+        width: 100%;
+    }
+    .about .about-content .personal-info{
+        flex: 0 0 50%;
+        max-width: 100%;
+    }
+} */
