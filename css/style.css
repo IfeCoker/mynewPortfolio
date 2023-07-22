@@ -217,6 +217,7 @@ h3.profession{
 .hidden{
     display: none;
 }
+.home .container,
 .about .container{
     padding-top: 0;
 }
