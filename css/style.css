@@ -31,9 +31,6 @@ body{
 ul{
     list-style: none;   
 }
-.main-container{
-    width: fit-content;
-}
 .aside{
     width: 270px;
     background-color: var(--bg-black-100);
@@ -81,7 +78,7 @@ ul{
     padding: 5px 15px;
 }
 .aside .nav li a.active {
-    color: red;
+    color: var(--skin-color);
 }
 .aside .nav li a i {
     margin-right: 15px;
@@ -219,6 +216,9 @@ h3.profession{
 }
 .hidden{
     display: none;
+}
+.about .container{
+    padding-top: 0;
 }
 .about .about-content{
     flex: 0 0 100%;
